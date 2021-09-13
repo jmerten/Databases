@@ -1,0 +1,691 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="570" y="294" width="216" height="288" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Convert VisitTime from Fact Table Measures and Time from Time Dimension from string to Time</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select pamperspa.visit.VisitDate,
+	pamperspa.visit.VisitTime,
+	pamperspa.visit.SEmployee,
+	pamperspa.visit.Patron,
+	pamperspa.visitprocedures.AmountCharged,
+	pamperspa.spaprocedure.ProcedureID 
+from pamperspa.visit 
+	inner join pamperspa.visitprocedures on pamperspa.visit.VisitID = pamperspa.visitprocedures.VisitID 
+	inner join pamperspa.spaprocedure on pamperspa.spaprocedure.ProcedureID = pamperspa.visitprocedures.ProcedureID</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Query for Fact Table Measures and Lookup IDs</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select pamperspa.visit.Visit...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VisitDate" source="File: aka:MySQL|||select pamperspa.visit.VisitDate,&#xA;	pamperspa.visit.VisitTime,&#xA;	pamperspa.visit.SEmployee,&#xA;	pamperspa.visit.Patron,&#xA;	pamperspa.visitprocedures.AmountCharged,&#xA;	pamperspa.spaprocedure.ProcedureID &#xA;from pamperspa.visit &#xA;	inner join pamperspa.visitprocedures on pamperspa.visit.VisitID = pamperspa.visitprocedures.VisitID &#xA;	inner join pamperspa.spaprocedure on pamperspa.spaprocedure.ProcedureID = pamperspa.visitprocedures.ProcedureID" type="Date" />
+            <Field name="VisitTime" size="45" source="File: aka:MySQL|||select pamperspa.visit.VisitDate,&#xA;	pamperspa.visit.VisitTime,&#xA;	pamperspa.visit.SEmployee,&#xA;	pamperspa.visit.Patron,&#xA;	pamperspa.visitprocedures.AmountCharged,&#xA;	pamperspa.spaprocedure.ProcedureID &#xA;from pamperspa.visit &#xA;	inner join pamperspa.visitprocedures on pamperspa.visit.VisitID = pamperspa.visitprocedures.VisitID &#xA;	inner join pamperspa.spaprocedure on pamperspa.spaprocedure.ProcedureID = pamperspa.visitprocedures.ProcedureID" type="V_String" />
+            <Field name="SEmployee" size="3" source="File: aka:MySQL|||select pamperspa.visit.VisitDate,&#xA;	pamperspa.visit.VisitTime,&#xA;	pamperspa.visit.SEmployee,&#xA;	pamperspa.visit.Patron,&#xA;	pamperspa.visitprocedures.AmountCharged,&#xA;	pamperspa.spaprocedure.ProcedureID &#xA;from pamperspa.visit &#xA;	inner join pamperspa.visitprocedures on pamperspa.visit.VisitID = pamperspa.visitprocedures.VisitID &#xA;	inner join pamperspa.spaprocedure on pamperspa.spaprocedure.ProcedureID = pamperspa.visitprocedures.ProcedureID" type="String" />
+            <Field name="Patron" size="4" source="File: aka:MySQL|||select pamperspa.visit.VisitDate,&#xA;	pamperspa.visit.VisitTime,&#xA;	pamperspa.visit.SEmployee,&#xA;	pamperspa.visit.Patron,&#xA;	pamperspa.visitprocedures.AmountCharged,&#xA;	pamperspa.spaprocedure.ProcedureID &#xA;from pamperspa.visit &#xA;	inner join pamperspa.visitprocedures on pamperspa.visit.VisitID = pamperspa.visitprocedures.VisitID &#xA;	inner join pamperspa.spaprocedure on pamperspa.spaprocedure.ProcedureID = pamperspa.visitprocedures.ProcedureID" type="String" />
+            <Field name="AmountCharged" source="File: aka:MySQL|||select pamperspa.visit.VisitDate,&#xA;	pamperspa.visit.VisitTime,&#xA;	pamperspa.visit.SEmployee,&#xA;	pamperspa.visit.Patron,&#xA;	pamperspa.visitprocedures.AmountCharged,&#xA;	pamperspa.spaprocedure.ProcedureID &#xA;from pamperspa.visit &#xA;	inner join pamperspa.visitprocedures on pamperspa.visit.VisitID = pamperspa.visitprocedures.VisitID &#xA;	inner join pamperspa.spaprocedure on pamperspa.spaprocedure.ProcedureID = pamperspa.visitprocedures.ProcedureID" type="Int32" />
+            <Field name="ProcedureID" size="3" source="File: aka:MySQL|||select pamperspa.visit.VisitDate,&#xA;	pamperspa.visit.VisitTime,&#xA;	pamperspa.visit.SEmployee,&#xA;	pamperspa.visit.Patron,&#xA;	pamperspa.visitprocedures.AmountCharged,&#xA;	pamperspa.spaprocedure.ProcedureID &#xA;from pamperspa.visit &#xA;	inner join pamperspa.visitprocedures on pamperspa.visit.VisitID = pamperspa.visitprocedures.VisitID &#xA;	inner join pamperspa.spaprocedure on pamperspa.spaprocedure.ProcedureID = pamperspa.visitprocedures.ProcedureID" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select pamperspa_dw.dim_patron.PatronKey,
+	pamperspa_dw.dim_patron.PatronID 
+from pamperspa_dw.dim_patron</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get PatronIDs from DW</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select pamperspa_dw.dim_patr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="PatronKey" source="File: aka:MySQL|||select pamperspa_dw.dim_patron.PatronKey,&#xA;	pamperspa_dw.dim_patron.PatronID &#xA;from pamperspa_dw.dim_patron" type="Int32" />
+            <Field name="PatronID" size="4" source="File: aka:MySQL|||select pamperspa_dw.dim_patron.PatronKey,&#xA;	pamperspa_dw.dim_patron.PatronID &#xA;from pamperspa_dw.dim_patron" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="210" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Patron" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PatronID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Patron" selected="False" input="Left_" />
+                <SelectField field="Right_PatronID" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="174" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select pamperspa_dw.dim_employee.Employee_Key,
+	pamperspa_dw.dim_employee.Employee_ID 
+from pamperspa_dw.dim_employee</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get EmployeeIDs from DW</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select pamperspa_dw.dim_empl...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="Employee_Key" source="File: aka:MySQL|||select pamperspa_dw.dim_employee.Employee_Key,&#xA;	pamperspa_dw.dim_employee.Employee_ID &#xA;from pamperspa_dw.dim_employee" type="Int32" />
+            <Field name="Employee_ID" size="3" source="File: aka:MySQL|||select pamperspa_dw.dim_employee.Employee_Key,&#xA;	pamperspa_dw.dim_employee.Employee_ID &#xA;from pamperspa_dw.dim_employee" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="306" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="SEmployee" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Employee_ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_SEmployee" selected="False" input="Left_" />
+                <SelectField field="Right_Employee_ID" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="294" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select pamperspa_dw.dim_procedure.ProcedureID,
+	pamperspa_dw.dim_procedure.ProcedureKey 
+from pamperspa_dw.dim_procedure</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get ProcedureIDs from DW</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select pamperspa_dw.dim_proc...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProcedureID" size="3" source="File: aka:MySQL|||select pamperspa_dw.dim_procedure.ProcedureID,&#xA;	pamperspa_dw.dim_procedure.ProcedureKey &#xA;from pamperspa_dw.dim_procedure" type="String" />
+            <Field description="PrimaryKey" name="ProcedureKey" source="File: aka:MySQL|||select pamperspa_dw.dim_procedure.ProcedureID,&#xA;	pamperspa_dw.dim_procedure.ProcedureKey &#xA;from pamperspa_dw.dim_procedure" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="414" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProcedureID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProcedureID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProcedureID" selected="False" input="Left_" />
+                <SelectField field="Right_ProcedureID" selected="False" rename="Right_ProcedureID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="294" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select pamperspa_dw.dim_calendar.CalendarKey,
+	pamperspa_dw.dim_calendar.Fulldate 
+from pamperspa_dw.dim_calendar</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get Calendar Fulldate from DW</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select pamperspa_dw.dim_cale...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="CalendarKey" source="File: aka:MySQL|||select pamperspa_dw.dim_calendar.CalendarKey,&#xA;	pamperspa_dw.dim_calendar.Fulldate &#xA;from pamperspa_dw.dim_calendar" type="Int32" />
+            <Field name="Fulldate" source="File: aka:MySQL|||select pamperspa_dw.dim_calendar.CalendarKey,&#xA;	pamperspa_dw.dim_calendar.Fulldate &#xA;from pamperspa_dw.dim_calendar" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="498" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="VisitDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Fulldate" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VisitDate" selected="False" input="Left_" />
+                <SelectField field="Right_Fulldate" selected="False" input="Right_" />
+                <SelectField field="Right_Date" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="474" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:MySQL|||select pamperspa_dw.dim_time.* 
+from pamperspa_dw.dim_time</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get Time VisitTime from DW</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=select pamperspa_dw.dim_time...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="Timekey" source="File: aka:MySQL|||select pamperspa_dw.dim_time.* &#xA;from pamperspa_dw.dim_time" type="Int32" />
+            <Field name="Time" size="8" source="File: aka:MySQL|||select pamperspa_dw.dim_time.* &#xA;from pamperspa_dw.dim_time" type="String" />
+            <Field name="PartofDay" size="2" source="File: aka:MySQL|||select pamperspa_dw.dim_time.* &#xA;from pamperspa_dw.dim_time" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="846" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Time" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Time" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VisitTime" selected="False" input="Left_" />
+                <SelectField field="Left_CalendarKey" selected="True" input="Left_" />
+                <SelectField field="Left_PatronKey" selected="True" input="Left_" />
+                <SelectField field="Left_ProcedureKey" selected="True" input="Left_" />
+                <SelectField field="Right_Timekey" selected="True" input="Right_" />
+                <SelectField field="Left_Employee_Key" selected="True" input="Left_" />
+                <SelectField field="Left_AmountCharged" selected="True" input="Left_" />
+                <SelectField field="Right_VisitTime" selected="False" rename="Right_VisitTime" input="Right_" />
+                <SelectField field="Right_Time" selected="False" input="Right_" />
+                <SelectField field="Right_PartofDay" selected="False" input="Right_" />
+                <SelectField field="Left_1" selected="False" input="Left_" />
+                <SelectField field="Left_2" selected="False" input="Left_" />
+                <SelectField field="Left_Time" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="414" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Fulldate" selected="True" type="Date" size="10" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="942" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:MySQL|||fact_revenue</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL>ALTER TABLE `pamperspa_dw`.`fact_revenue` 
+CHANGE COLUMN `CalendarKey` `CalendarKey` INT NOT NULL ,
+CHANGE COLUMN `PatronKey` `PatronKey` INT NOT NULL ,
+CHANGE COLUMN `ProcedureKey` `ProcedureKey` INT NOT NULL ,
+CHANGE COLUMN `Timekey` `Timekey` INT NOT NULL ,
+CHANGE COLUMN `Employee_Key` `Employee_Key` INT NOT NULL ,
+ADD PRIMARY KEY (`CalendarKey`, `PatronKey`, `ProcedureKey`, `Timekey`, `Employee_Key`);
+ALTER TABLE `pamperspa_dw`.`fact_revenue` 
+ADD INDEX `Employee_Key_idx` (`Employee_Key` ASC) VISIBLE,
+ADD INDEX `PatronKey_idx` (`PatronKey` ASC) VISIBLE,
+ADD INDEX `ProcedureKey_idx` (`ProcedureKey` ASC) VISIBLE,
+ADD INDEX `Timekey_idx` (`Timekey` ASC) VISIBLE;
+;
+ALTER TABLE `pamperspa_dw`.`fact_revenue` 
+ADD CONSTRAINT `CalendarKey`
+  FOREIGN KEY (`CalendarKey`)
+  REFERENCES `pamperspa_dw`.`dim_calendar` (`CalendarKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `Employee_Key`
+  FOREIGN KEY (`Employee_Key`)
+  REFERENCES `pamperspa_dw`.`dim_employee` (`Employee_Key`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `PatronKey`
+  FOREIGN KEY (`PatronKey`)
+  REFERENCES `pamperspa_dw`.`dim_patron` (`PatronKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `ProcedureKey`
+  FOREIGN KEY (`ProcedureKey`)
+  REFERENCES `pamperspa_dw`.`dim_procedure` (`ProcedureKey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `Timekey`
+  FOREIGN KEY (`Timekey`)
+  REFERENCES `pamperspa_dw`.`dim_time` (`Timekey`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;;</PostSQL>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL>use pamperspa_dw;
+drop table if exists fact_revenue;</PreSQL>
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Write fact table to DW</AnnotationText>
+          <DefaultAnnotationText>aka:MySQL
+Query=fact_revenue</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="594" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>VisitTime</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value=", " />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="690" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeParse([1],'%H:%M')" field="Time" size="8" type="Time" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Time = DateTimeParse([1],'%H:%M')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="582" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Time" selected="True" type="Time" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>merten_fact</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

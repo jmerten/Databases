@@ -1,0 +1,134 @@
+Locality,Health District,Vaccine Phase,Website
+King George,Rappahannock,2,https://www.vdh.virginia.gov/rappahannock/
+Lancaster,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Lynchburg,Central Virginia,2,https://www.vdh.virginia.gov/central-virginia/
+Patrick,West Piedmont,2,https://www.vdh.virginia.gov/west-piedmont/
+Goochland,Chickahominy,2,https://www.vdh.virginia.gov/chickahominy/
+Norton,Lenowisco,2,https://www.vdh.virginia.gov/lenowisco/
+Rappahannock,Rappahannock Rapidan,2,https://www.vdh.virginia.gov/rappahannock-rapidan/
+Botetourt,Alleghany,2,https://www.vdh.virginia.gov/alleghany/
+Bath,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
+Orange,Rappahannock Rapidan,2,https://www.vdh.virginia.gov/rappahannock-rapidan/
+Radford,New River,2,https://www.nrvroadtowellness.com/
+Wythe,Mount Rogers,2,https://www.vdh.virginia.gov/mount-rogers/
+Culpeper,Rappahannock Rapidan,2,https://www.vdh.virginia.gov/rappahannock-rapidan/
+Accomack,Eastern Shore,2,https://www.vdh.virginia.gov/eastern-shore/
+Emporia,Crater,1c,https://www.vdh.virginia.gov/crater/
+Waynesboro,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
+Madison,Rappahannock Rapidan,2,https://www.vdh.virginia.gov/rappahannock-rapidan/
+Spotsylvania,Rappahannock,2,https://www.vdh.virginia.gov/rappahannock/
+Rockbridge,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
+Williamsburg,Peninsula,1c,https://www.vdh.virginia.gov/peninsula/
+Surry,Crater,1c,https://www.vdh.virginia.gov/crater/
+Winchester,Lord Fairfax,2,https://www.vdh.virginia.gov/lord-fairfax/
+Northampton,Eastern Shore,2,https://www.vdh.virginia.gov/eastern-shore/
+James City,Peninsula,1c,https://www.vdh.virginia.gov/peninsula/
+Fairfax,Fairfax,1c,https://www.fairfaxcounty.gov/health/
+Tazewell,Cumberland Plateau,2,https://www.vdh.virginia.gov/cumberland-plateau/
+Suffolk,Western Tidewater,1c,https://www.vdh.virginia.gov/western-tidewater/
+Wise,Lenowisco,2,https://www.vdh.virginia.gov/lenowisco/
+Brunswick,Southside,2,https://www.vdh.virginia.gov/southside/
+Craig,Alleghany,2,https://www.vdh.virginia.gov/alleghany/
+Galax,Mount Rogers,2,https://www.vdh.virginia.gov/mount-rogers/
+Hampton,Hampton,1c,https://www.vdh.virginia.gov/hampton/
+Richmond County,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Augusta,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
+Charlotte,Piedmont,1c,https://www.vdh.virginia.gov/piedmont/
+Falls Church,Fairfax,1c,https://www.fairfaxcounty.gov/health/
+Lee,Lenowisco,2,https://www.vdh.virginia.gov/lenowisco/
+Amelia,Piedmont,1c,https://www.vdh.virginia.gov/piedmont/
+Manassas Park,Prince William,1c,https://www.vdh.virginia.gov/prince-william/
+Buena Vista City,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
+Frederick,Lord Fairfax,2,https://www.vdh.virginia.gov/lord-fairfax/
+Dickenson,Cumberland Plateau,2,https://www.vdh.virginia.gov/cumberland-plateau/
+King and Queen,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Appomattox,Central Virginia,2,https://www.vdh.virginia.gov/central-virginia/
+Isle of Wight,Western Tidewater,1c,https://www.vdh.virginia.gov/western-tidewater/
+Buckingham,Piedmont,1c,https://www.vdh.virginia.gov/piedmont/
+Louisa,Blue Ridge,1c,https://www.vdh.virginia.gov/blue-ridge/
+Mecklenburg,Southside,2,https://www.vdh.virginia.gov/southside/
+Lexington,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
+Franklin City,Western Tidewater,1c,https://www.vdh.virginia.gov/western-tidewater/
+Dinwiddie,Crater,1c,https://www.vdh.virginia.gov/crater/
+Prince George,Crater,1c,https://www.vdh.virginia.gov/crater/
+Petersburg,Crater,1c,https://www.vdh.virginia.gov/crater/
+New Kent,Chickahominy,2,https://www.vdh.virginia.gov/chickahominy/
+Newport News,Peninsula,1c,https://www.vdh.virginia.gov/peninsula/
+Scott,Lenowisco,2,https://www.vdh.virginia.gov/lenowisco/
+Southampton,Western Tidewater,1c,https://www.vdh.virginia.gov/western-tidewater/
+Roanoke City,Roanoke,2,https://www.vdh.virginia.gov/roanoke/
+Warren,Lord Fairfax,2,https://www.vdh.virginia.gov/lord-fairfax/
+Franklin County,West Piedmont,2,https://www.vdh.virginia.gov/west-piedmont/
+Charles City,Chickahominy,2,https://www.vdh.virginia.gov/chickahominy/
+Loudoun,Loudoun,1c,https://www.loudoun.gov/health
+Middlesex,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Danville,Pittsylvania-Danville,2,https://www.vdh.virginia.gov/pittsylvania-danville/
+Russell,Cumberland Plateau,2,https://www.vdh.virginia.gov/cumberland-plateau/
+Charlottesville,Blue Ridge,1c,https://www.vdh.virginia.gov/blue-ridge/
+King William,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Mathews,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Richmond City,Richmond,2,https://www.vdh.virginia.gov/richmond-city/
+Westmoreland,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Pulaski,New River,2,https://www.nrvroadtowellness.com/
+Henrico,Henrico,2,https://henrico.us/health/
+Hopewell,Crater,1c,https://www.vdh.virginia.gov/crater/
+Caroline,Rappahannock,2,https://www.vdh.virginia.gov/rappahannock/
+Nelson,Blue Ridge,1c,https://www.vdh.virginia.gov/blue-ridge/
+Powhatan,Chesterfield,2,https://www.vdh.virginia.gov/chesterfield/
+Campbell,Central Virginia,2,https://www.vdh.virginia.gov/central-virginia/
+Hanover,Chickahominy,2,https://www.vdh.virginia.gov/chickahominy/
+Chesapeake,Chesapeake,2,https://www.vdh.virginia.gov/chesapeake/
+Buchanan,Cumberland Plateau,2,https://www.vdh.virginia.gov/cumberland-plateau/
+Fluvanna,Blue Ridge,1c,https://www.vdh.virginia.gov/blue-ridge/
+Poquoson,Peninsula,1c,https://www.vdh.virginia.gov/peninsula/
+Fauquier,Rappahannock Rapidan,2,https://www.vdh.virginia.gov/rappahannock-rapidan/
+Amherst,Central Virginia,2,https://www.vdh.virginia.gov/central-virginia/
+Fredericksburg,Rappahannock,2,https://www.vdh.virginia.gov/rappahannock/
+Grayson,Mount Rogers,2,https://www.vdh.virginia.gov/mount-rogers/
+Martinsville,West Piedmont,2,https://www.vdh.virginia.gov/west-piedmont/
+Bristol,Mount Rogers,2,https://www.vdh.virginia.gov/mount-rogers/
+Harrisonburg,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
+Prince Edward,Piedmont,1c,https://www.vdh.virginia.gov/piedmont/
+Cumberland,Piedmont,1c,https://www.vdh.virginia.gov/piedmont/
+Greensville,Crater,1c,https://www.vdh.virginia.gov/crater/
+Carroll,Mount Rogers,2,https://www.vdh.virginia.gov/mount-rogers/
+Rockingham,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
+Montgomery,New River,2,https://www.nrvroadtowellness.com/
+Chesterfield,Chesterfield,2,https://www.vdh.virginia.gov/chesterfield/
+Manassas City,Prince William,1c,https://www.vdh.virginia.gov/prince-william/
+Page,Lord Fairfax,2,https://www.vdh.virginia.gov/lord-fairfax/
+Arlington,Arlington,1c,https://www.arlingtonva.us/covid-19/
+Bedford,Central Virginia,2,https://www.vdh.virginia.gov/central-virginia/
+Lunenburg,Piedmont,1c,https://www.vdh.virginia.gov/piedmont/
+Essex,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Greene,Blue Ridge,1c,https://www.vdh.virginia.gov/blue-ridge/
+Washington,Mount Rogers,2,https://www.vdh.virginia.gov/mount-rogers/
+Virginia Beach,Virginia Beach,2,https://www.vdh.virginia.gov/virginia-beach/
+Giles,New River,2,https://www.nrvroadtowellness.com/
+Clarke,Lord Fairfax,2,https://www.vdh.virginia.gov/lord-fairfax/
+Alleghany,Alleghany,2,https://www.vdh.virginia.gov/alleghany/
+Gloucester,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Bland,Mount Rogers,2,https://www.vdh.virginia.gov/mount-rogers/
+York,Peninsula,1c,https://www.vdh.virginia.gov/peninsula/
+Norfolk,Norfolk,2,https://www.norfolk.gov/153/Public-Health
+Henry,West Piedmont,2,https://www.vdh.virginia.gov/west-piedmont/
+Staunton,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
+Smyth,Mount Rogers,2,https://www.vdh.virginia.gov/mount-rogers/
+Roanoke County,Alleghany,2,https://www.vdh.virginia.gov/alleghany/
+Prince William,Prince William,1c,https://www.vdh.virginia.gov/prince-william/
+Fairfax City,Fairfax,1c,https://www.fairfaxcounty.gov/health/
+Stafford,Rappahannock,2,https://www.vdh.virginia.gov/rappahannock/
+Salem,Alleghany,2,https://www.vdh.virginia.gov/alleghany/
+Halifax,Southside,2,https://www.vdh.virginia.gov/southside/
+Sussex,Crater,1c,https://www.vdh.virginia.gov/crater/
+Colonial Heights,Chesterfield,2,https://www.vdh.virginia.gov/chesterfield/
+Albemarle,Blue Ridge,1c,https://www.vdh.virginia.gov/blue-ridge/
+Floyd,New River,2,https://www.nrvroadtowellness.com/
+Nottoway,Piedmont,1c,https://www.vdh.virginia.gov/piedmont/
+Shenandoah,Lord Fairfax,2,https://www.vdh.virginia.gov/lord-fairfax/
+Portsmouth,Portsmouth,1c,https://www.vdh.virginia.gov/portsmouth/
+Alexandria,Alexandria,1c,https://www.alexandriava.gov/Health
+Covington,Alleghany,2,https://www.vdh.virginia.gov/alleghany/
+Pittsylvania,Pittsylvania-Danville,2,https://www.vdh.virginia.gov/pittsylvania-danville/
+Northumberland,Three Rivers,1c,https://www.vdh.virginia.gov/three-rivers/
+Highland,Central Shenandoah,2,https://www.vdh.virginia.gov/central-shenandoah/
